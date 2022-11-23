@@ -12,4 +12,13 @@ public class Snak extends Product{
     public void setTaste(String taste) {
         this.taste = taste;
     }
+
+    @Override
+    public String toString() {
+        return "Snak{" +
+                "name='" + super.getName() + '\'' +
+                ", cost=" + super.getCost() +
+                "taste='" + taste + '\'' +
+                '}';
+    }
 }

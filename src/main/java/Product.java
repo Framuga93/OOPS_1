@@ -28,6 +28,7 @@ public class Product {
     public String toString() {
         return "Product{" +
                 "name='" + name + '\'' +
+                ", cost=" + cost +
                 '}';
     }
 }

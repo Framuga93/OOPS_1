@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args){
         List<Product> productList = new ArrayList<Product>(
                 Arrays.asList(
-                new Product("Snikers",12.0),
+                new Snak("Lays",12.0,"Cheese"),
                 new Product("Twix",11.0)
                         )
         );
@@ -17,8 +17,8 @@ public class Main {
 
         List<Product> bottleList = new ArrayList<Product>(
                 Arrays.asList(
-                        new Product("Aqua",12.0),
-                        new Product("Evelate",11.0)
+                        new Drinks("Aqua",12.0, 0.5),
+                        new Drinks("Evelate",11.0, 1.0)
                 )
         );
         VendineMachine bottleMachine = new DrinksMachine(bottleList);

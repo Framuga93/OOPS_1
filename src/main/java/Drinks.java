@@ -12,4 +12,13 @@ public class Drinks extends Product{
     public void setVolume(Double volume) {
         this.volume = volume;
     }
+
+    @Override
+    public String toString() {
+        return "Drinks{" +
+                "name='" + super.getName() + '\'' +
+                ", cost=" + super.getCost() +
+                "volume=" + volume +
+                '}';
+    }
 }
